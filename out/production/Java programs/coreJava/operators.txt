@@ -1,0 +1,21 @@
+ 1. UNARY: postfix : expr++ expr--
+           prefix  : ++expr --expr +expr -expr ~ !
+
+ 2. ARITHMETIC: multiplicative : * / %
+                additive       : + -
+
+ 3. SHIFT: << >> >>>
+
+ 4. RELATIONAL: comparison : < > <= >= instanceof
+                equality   : == !=
+
+ 5. BITWISE: Bitwise AND : &
+             Bitwise Exclusive OR : ^
+             Bitwise Inclusive OR : |
+
+ 6. Logical: Logical AND : &&
+             Logical OR  : ||
+
+ 7: Ternary: ? :
+
+ 8. Assignment: = += -= *= /= %= &= ^= |= <<= >>= >>>=

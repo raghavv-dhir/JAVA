@@ -1,0 +1,65 @@
+# Bit Manipulation Basics:
+1. OPERATORS:
+--> AND:     | a | b | a AND b |
+             | 0 | 0 |    0    |
+             | 0 | 1 |    0    |
+             | 1 | 0 |    0    |
+             | 1 | 1 |    1    |
+NOTE: When we perform (num & 1), digits remains the same.
+NOTE: When we perform (num & 0), we get 0.
+
+--> OR:      | a | b | a OR b |
+             | 0 | 0 |    0   |
+             | 0 | 1 |    1   |
+             | 1 | 0 |    1   |
+             | 1 | 1 |    1   |
+
+--> XOR:     | a | b | a XOR b |
+             | 0 | 0 |    0    |
+             | 0 | 1 |    1    |
+             | 1 | 0 |    1    |
+             | 1 | 1 |    0    |
+NOTE: When we perform (num ^ 1), it complements each bit.
+NOTE: When we perform (num ^ 0), digits remains the same.
+NOTE: When we perform (num ^ num), all digits becomes 0.
+
+--> NOT:      0 --> 1
+              1 --> 0
+
+--> LEFT SHIFT OPERATOR (<<):
+    Decimal 10 << 1 = 1010 << 1 = Every digit shift 1 place to left from left to right = 1010(0) = Decimal 20
+NOTE: If we do (a << 1), it becomes 2^1 * a, In generalized way, (a << b) = (2^b * a).
+
+--> Right SHIFT OPERATOR (>>):
+    Decimal 10 >> 1 = 1010 << 1 = Every digit shift 1 place to right = (0)101 = Decimal 5
+NOTE: If we do (a >> 1), it becomes a / (2^1), In generalized way, (a >> b) = a / (2^b).
+
+2. NUMBER SYSTEMS:
+--> Decimal Number System: 0,1,2,3,4,5,6,7,8,9 (Base 10)
+--> Binary Number System: 0,1 (Base 2)
+--> Octal Number System: 0,1,2,3,4,5,6,7 (Base 8)
+--> Hexadecimal Number System: 0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F (Base 16)
+
+3. CONVERSION FROM ONE NUMBER SYSTEM TO ANOTHER:
+--> Decimal to base b: Keep dividing by base, take remainders and write in opposite.
+    Example 1: 17 to base 2:
+              2 | 17
+              2 | 8    rem= 1
+              2 | 4    rem= 0
+              2 | 2    rem= 0
+              2 | 1    rem= 0
+                | 0    rem= 1, write from bottom to top= (10001)
+    Therefore, 17 is 10001 in binary.
+    Example 2: 17 to base 8:
+                  8 | 17
+                  8 | 2    rem= 1
+                    | 0    rem= 2, write from bottom to top= (21)
+    Therefore, 17 is 21 in Octal.
+
+--> Any base b to Decimal: Multiply and add the power of b with digits from right to left.
+    Example 1: Binary 101 to Decimal:
+               (1 * 2^2) + (0 * 2^1) + (1 * 2^0) = 4 + 0 + 1 = 5
+    Therefore Binary 101 is 5 in Decimal.
+    Example 2: Octal 21 to Decimal:
+                   (2 * 8^1) + (1 * 8^0) = 16 + 1 = 17
+        Therefore Octal 21 is 17 in Decimal.

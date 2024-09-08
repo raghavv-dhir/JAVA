@@ -1,0 +1,21 @@
+# Introduction to Java Programming:-
+• Developed by Sun Microsystems Inc. in 1991, later acquired by Oracle
+Corporation.
+• It was developed by James Gosling and Patrick Naughton.
+• Java is object-oriented general purpose programming , robust
+platform independent programming language used to create
+application software such as Desktop application, Enterprise Application
+Mobile Application and much more
+
+# JVM, JRE and JDK:-
+• JVM-Java Virtual Machine - specification
+• JRE-Java Runtime Environment-lt is the implementation of JVM
+• JDK-Java Development Kit-That contain Development tools, JRE
+              |----------------------------------|
+              |            JDK (1)               |
+              |        |--------------|          |
+              | JRE(2) |   JVM +      |          |
+              |        |   class lib. |          |
+              |        |--------------|          |
+              | +compilers,debuggers,javaDoc (3) |
+              |----------------------------------|
